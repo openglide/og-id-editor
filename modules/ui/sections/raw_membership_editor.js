@@ -32,7 +32,7 @@ export function uiSectionRawMembershipEditor(context) {
             var parents = getSharedParentRelations();
             var gt = parents.length > _maxMemberships ? '>' : '';
             var count = gt + parents.slice(0, _maxMemberships).length;
-            return t.append('inspector.title_count', { title: t('inspector.relations'), count: count });
+            return t.append('inspector.title_count', { title: t('inspector.sites'), count: count });
         })
         .disclosureContent(renderDisclosureContent);
 
@@ -274,8 +274,8 @@ export function uiSectionRawMembershipEditor(context) {
     function fetchNearbyRelations(q, callback) {
         var newRelation = {
             relation: null,
-            value: t('inspector.new_relation'),
-            display: t.append('inspector.new_relation')
+            value: t('inspector.new_site'),
+            display: t.append('inspector.new_site')
         };
 
         var entityID = _entityIDs[0];

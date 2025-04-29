@@ -22,27 +22,20 @@ export function uiToolDrawModes(context) {
     };
 
     var modes = [
+        modeAddArea(context, {
+            title: t.append('modes.add_launch_lz.title'),
+            button: 'area',
+            description: t.append('modes.add_launch_lz.description'),
+            preset: presetManager.item('area'),
+            key: '3'
+        }),
         modeAddPoint(context, {
-            title: t.append('modes.add_point.title'),
+            title: t.append('modes.add_feature.title'),
             button: 'point',
-            description: t.append('modes.add_point.description'),
+            description: t.append('modes.add_feature.description'),
             preset: presetManager.item('point'),
             key: '1'
         }),
-        modeAddLine(context, {
-            title: t.append('modes.add_line.title'),
-            button: 'line',
-            description: t.append('modes.add_line.description'),
-            preset: presetManager.item('line'),
-            key: '2'
-        }),
-        modeAddArea(context, {
-            title: t.append('modes.add_area.title'),
-            button: 'area',
-            description: t.append('modes.add_area.description'),
-            preset: presetManager.item('area'),
-            key: '3'
-        })
     ];
 
 

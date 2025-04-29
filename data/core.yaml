@@ -23,7 +23,7 @@ en:
     undo_redo: Undo / Redo
     recent: Recent
     favorites: Favorites
-    add_feature: Add Feature
+    add_feature: Add site features
   title:
     format:
       context: "{base} – {context}"
@@ -37,6 +37,10 @@ en:
       title: Area
       description: "Add parks, buildings, lakes or other areas to the map."
       filter_tooltip: areas
+    add_launch_lz:
+      title: Add Launch or LZ
+      description: "Draw launch or landing zone boundaries"
+      filter_tooltip: Launch or landing zone
     add_line:
       title: Line
       description: "Add highways, streets, pedestrian paths, canals or other lines to the map."
@@ -44,6 +48,10 @@ en:
     add_point:
       title: Point
       description: "Add restaurants, monuments, postal boxes or other points to the map."
+      filter_tooltip: points
+    add_feature:
+      title: Add Features / Hazards
+      description: "Wind sock, house thermal, rotor trigger, etc."
       filter_tooltip: points
     add_note:
       title: Note
@@ -712,11 +720,16 @@ en:
     tags: Tags
     members: Members
     relations: Relations
+    sites: Add to a site?
     features: Features
     title_count: "{title} ({count})"
     add_to_relation: Add to a relation
+    add_to_site: Add to a site
+    add_to_tag: Add a tag
     new_relation: New relation...
+    new_site: Create new site...
     choose_relation: Choose a parent relation
+    choose_site: Choose site
     role: Role
     multiple_roles: Multiple Roles
     choose: Select feature type
@@ -760,6 +773,7 @@ en:
     node: Node
     way: Way
     relation: Relation
+    site: Site
     location: Location
     add_fields: "Add field:"
     lock:
