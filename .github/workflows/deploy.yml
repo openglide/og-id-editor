@@ -54,6 +54,7 @@ jobs:
       - run: npm run dist
         env:
           ID_PRESETS_CDN_URL: './id-tagging-schema/'
+          ID_API_CONNECTION_CLIENT_ID: 'KE6jr18mTMu-jS_Q_Z_B8S1JH1ADxwamsH6cP-U0efk'
       - name: Upload dist dir to pages
         uses: actions/upload-pages-artifact@v3
         with:
